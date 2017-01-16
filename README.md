@@ -74,11 +74,15 @@ Max Stoiber came up with the awesome idea of some minimal analytics Node server.
 
 ### True micro
 
-I wanted to make a really small and consistent module. That means get along with a single file but keept it easily readable. The result are less than 100 LoC (with comments!) in a single file.
+I wanted to make a really small and consistent module. That means get along with a single file but keep it easily readable. The result are less than 100 LoC (with comments!) in a single file.
 
 **Note:** *Neither the original module nor my implementation are real microservices. Per definition microservices have to be stateless. The analytics servers are persisting data in a databases and are therefore stateful.*
 
 ### Consistent URL structure
 
-To have an easy to remember URL structure I made some changes. Firstly the server only accepts `get` requests. There is no need to allow more methods. Also you might have to enable CORS features to enable cross-origin requests.
-Secondly the root path. Instead of givin an error message my implementation returns the view data for all tracked views.
+I wanted to have a consisten and easy to remember URL structure. Firstly the server only accepts `get` requests. There is no need to allow more methods. Otherwise you might have to enable CORS features to enable cross-origin requests.
+To utilize the root path it returns all data. For path specific data there are query args (see above).
+
+### Return value of tracking URLs
+
+The tracking URLs are returning HTTP status code `204`. This tells us the server processed the request and doesn't return any data. To get the views we call the URL next off `?count`. This makes it very clear which url is tracking the view by calling it and which is not.
