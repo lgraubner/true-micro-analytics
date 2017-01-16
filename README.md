@@ -4,7 +4,7 @@ Simple analytics server using [`micro`](https://github.com/zeit/micro). Track vi
 
 ## Get started
 
-Simply install `true-micro-analytics` globally and start it using `micro-analytics` command.
+Simply install `true-micro-analytics` globally and start it using `true-micro-analytics` command.
 
 ```
 npm install -g true-micro-analytics
