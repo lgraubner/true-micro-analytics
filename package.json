@@ -1,5 +1,6 @@
 {
   "name": "true-micro-analytics",
+  "description": "Simple analytics server using micro.",
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "Lars Graubner <mail@larsgraubner.de>",
