@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const { exec } = require('shelljs');
+
+// pass args to micro
+exec(`npm start -- ${process.argv.slice(2).join(' ')}`, {
+  cwd: __dirname,
+});

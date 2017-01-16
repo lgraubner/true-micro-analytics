@@ -1,0 +1,21 @@
+{
+  "name": "true-micro-analytics",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Lars Graubner <mail@larsgraubner.de>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^3.1.4",
+    "flat-file-db": "^1.0.0",
+    "micro": "^6.1.0",
+    "promise": "^7.1.1",
+    "shelljs": "^0.7.6"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production micro lib/index.js"
+  },
+  "bin": "./bin/true-micro-analytics"
+}
