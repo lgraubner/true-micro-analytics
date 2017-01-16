@@ -5,6 +5,10 @@
   "main": "src/index.js",
   "author": "Lars Graubner <mail@larsgraubner.de>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lgraubner/true-micro-analytics"
+  },
   "dependencies": {
     "cross-env": "^3.1.4",
     "flat-file-db": "^1.0.0",
