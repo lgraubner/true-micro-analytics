@@ -23,7 +23,7 @@ In production you should set up a Nginx Reverse Proxy (or something similar) to 
 
 To track a page view, command execution or anything else just make a get request to the corresponding path.
 
-```
+```JavaScript
 fetch(http://example.com/mypage)
   .catch((err) => {
     console.error('Could not track view.', err);
